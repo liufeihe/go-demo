@@ -1,3 +1,3 @@
-module github.com/google/uuid
+module go-demo
 
 go 1.17
