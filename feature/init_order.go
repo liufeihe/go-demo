@@ -24,7 +24,7 @@ func constInitCheck() string {
 }
 
 func variableInit(name string) string {
-	fmt.Printf("var %s has been initialzed\n", name)
+	fmt.Printf("var %s has been initialzed \n", name)
 	return name
 }
 
@@ -34,6 +34,10 @@ func init() {
 
 func init() {
 	fmt.Println("second init has been called.")
+}
+
+func Hello() {
+	fmt.Printf("hello, c1: %s, c2: %s \n", c1, c2)
 }
 
 func main() {
