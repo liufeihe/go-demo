@@ -8,6 +8,6 @@ import (
 
 func main() {
 	fmt.Println("hello, world")
-	// fmt.Println(uuid.NewString())
 	basic.InitDemo()
+	basic.StartServer()
 }

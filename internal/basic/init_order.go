@@ -1,6 +1,10 @@
-package feature
+package basic
 
-import "fmt"
+import (
+	"fmt"
+
+	"github.com/google/uuid"
+)
 
 var (
 	_  = constInitCheck()
@@ -38,6 +42,7 @@ func init() {
 
 func InitDemo() {
 	fmt.Printf("hello, c1: %s, c2: %s \n", c1, c2)
+	fmt.Println(uuid.NewString())
 }
 
 func main() {
