@@ -36,7 +36,7 @@ func init() {
 	fmt.Println("second init has been called.")
 }
 
-func Hello() {
+func InitDemo() {
 	fmt.Printf("hello, c1: %s, c2: %s \n", c1, c2)
 }
 
