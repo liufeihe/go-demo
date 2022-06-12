@@ -25,11 +25,11 @@ func NewBookStoreServer(addr string, s store.Store) *BookStoreServer {
 	}
 
 	router := mux.NewRouter()
-	router.HandleFunc("/book", srv.createBookHandler).Method("POST")
-	router.HandleFunc("/book/{id}", srv.updateBookHandler).Method("POST")
-	router.HandleFunc("/book/{id}", srv.getBookHandler).Method("GET")
-	router.HandleFunc("/book", srv.getAllBookHandler).Method("GET")
-	router.HandleFunc("/book/{id}", srv.delBookHandler).Method("DELETE")
+	router.HandleFunc("/book", srv.createBookHandler).Methods("POST")
+	router.HandleFunc("/book/{id}", srv.updateBookHandler).Methods("POST")
+	router.HandleFunc("/book/{id}", srv.getBookHandler).Methods("GET")
+	router.HandleFunc("/book", srv.getAllBookHandler).Methods("GET")
+	router.HandleFunc("/book/{id}", srv.delBookHandler).Methods("DELETE")
 
 	srv.srv.Handler = middleware.Logging(middleware.Validating(router))
 	return srv
