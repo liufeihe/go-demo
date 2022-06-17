@@ -8,6 +8,7 @@ import (
 
 func main() {
 	fmt.Println("hello, world")
-	basic.InitDemo()
-	basic.StartServer()
+	// basic.InitDemo()
+	// basic.StartServer()
+	basic.StringDemo()
 }
