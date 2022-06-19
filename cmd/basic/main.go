@@ -10,5 +10,6 @@ func main() {
 	fmt.Println("hello, world")
 	// basic.InitDemo()
 	// basic.StartServer()
-	basic.StringDemo()
+	// basic.StringDemo()
+	basic.ConstantDemo()
 }
