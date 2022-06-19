@@ -2,8 +2,18 @@ package basic
 
 import (
 	"fmt"
+	"reflect"
 	"unicode/utf8"
+	"unsafe"
 )
+
+func dumpBytesArray(arr []byte) {
+	fmt.Printf("[")
+	for _, b := range arr {
+		fmt.Printf("%c ", b)
+	}
+	fmt.Printf("]\n")
+}
 
 func encodeRune(r rune) {
 	buf := make([]byte, 3)
@@ -42,4 +52,11 @@ func StringDemo() {
 	encodeRune('a')
 	encodeRune('b')
 	encodeRune('中')
+
+	// 字符串的底层实现
+	var h = "hello"
+	hdr := (*reflect.StringHeader)(unsafe.Pointer(&h))
+	fmt.Printf("0x%x\n", hdr.Data)
+	p := (*[5]byte)(unsafe.Pointer(hdr.Data))
+	dumpBytesArray((*p)[:])
 }
