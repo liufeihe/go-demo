@@ -11,5 +11,7 @@ func main() {
 	// basic.InitDemo()
 	// basic.StartServer()
 	// basic.StringDemo()
-	basic.ConstantDemo()
+	// basic.ConstantDemo()
+	// basic.ArrDemo()
+	basic.MapDemo()
 }
