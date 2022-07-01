@@ -29,7 +29,7 @@ func ArrDemo() {
 	arr := [10]int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
 	sl2 := arr[3:7:9]
 	fmt.Println(arr, sl2)
-	// 基于切换创建切片
+	// 基于切片创建切片
 	sl3 := sl2[1:2:3]
 	fmt.Println(sl3)
 }
