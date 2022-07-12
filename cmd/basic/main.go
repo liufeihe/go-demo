@@ -13,5 +13,6 @@ func main() {
 	// basic.StringDemo()
 	// basic.ConstantDemo()
 	// basic.ArrDemo()
-	basic.MapDemo()
+	// basic.MapDemo()
+	basic.StructDemo()
 }
