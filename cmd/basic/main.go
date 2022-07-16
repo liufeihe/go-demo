@@ -15,5 +15,6 @@ func main() {
 	// basic.ArrDemo()
 	// basic.MapDemo()
 	// basic.StructDemo()
-	basic.CtrlDemo()
+	// basic.CtrlDemo()
+	basic.FuncDemo()
 }
