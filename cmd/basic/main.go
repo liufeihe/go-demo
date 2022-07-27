@@ -17,5 +17,6 @@ func main() {
 	// basic.StructDemo()
 	// basic.CtrlDemo()
 	// basic.FuncDemo()
-	basic.MethodDemo()
+	// basic.MethodDemo()
+	basic.InterDemo()
 }
